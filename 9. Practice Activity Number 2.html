@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Power BI Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h2 {
+      text-align: center;
+      color: #0056a3;
+      margin-bottom: 30px;
+    }
+    ol {
+      counter-reset: question-counter;
+      list-style: none;
+      padding: 0;
+    }
+    ol li {
+      counter-increment: question-counter;
+      margin: 20px 0;
+      padding: 15px;
+      background: #ffffff;
+      border-left: 6px solid #0056a3;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 18px;
+    }
+    ol li::before {
+      content: counter(question-counter) ". ";
+      font-weight: bold;
+      color: #0056a3;
+      font-size: 20px;
+    }
+    b {
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h2>Power BI Assignment Tasks</h2>
+  <ol>
+    <li>Connect to the <b>HPIAdmins</b> spreadsheet in the <b>SourceData</b> workbook.</li>
+    <li>Hide all of the fields except <b>Date</b>, <b>Region Name</b>, <b>Index</b> and <b>12m%Change</b>.</li>
+    <li>Ensure that <b>Date</b> is a Date field, <b>Region Name</b> is a String field, and <b>Index</b> and <b>12m%Change</b> are Number fields.</li>
+    <li>Rename <b>12m%Change</b> as <b>"12 month percentage change"</b>, and change its default aggregation to <b>Average</b>.</li>
+    <li>Create a line chart that shows, for each <b>Region Name</b>, the average <b>12 month percentage change</b> per year.</li>
+    <li>Color the lines according to the <b>Region Name</b>.</li>
+    <li>Duplicate the visualization and change it to a <b>Circle display</b>.</li>
+    <li>Add the <b>Average of Index</b> as the size.</li>
+  </ol>
+</body>
+</html>

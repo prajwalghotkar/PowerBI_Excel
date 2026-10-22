@@ -3,6 +3,12 @@
 -----
 # Power BI Practice Activity  – UK House Price Index (HPIAdmins)
 
+<img width="959" height="482" alt="Screenshot 2026-10-22 171421" src="https://github.com/user-attachments/assets/c8d5887a-1615-460d-987c-f967ad637b82" />
+
+-----
+
+
+
 Solution guide for the 8 tasks in `9. Practice Activity Number 2.html`, plus an interactive dashboard template.
 
 ## 1. What is in the data (checked from your workbook)

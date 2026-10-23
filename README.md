@@ -151,26 +151,6 @@ Average of Index (bubble size): 2009 → GM 91.8, Merseyside 99.6, S Yorks 95.1,
 7. **Drill down**: on the line chart turn on drill mode (down arrow) to move from Year → Quarter → Month. Keep the hierarchy for this.
 8. **Sync slicers** (View → Sync slicers) if you add a second page.
 
-### Optional DAX measures (for cards and titles)
-```DAX
-Avg 12m Change = AVERAGE ( HPIAdmins[12 month percentage change] )
-
-Avg Index = AVERAGE ( HPIAdmins[Index] )
-
-Latest Year = MAX ( HPIAdmins[Year] )
-
-Dynamic Title =
-"Average 12-month change – "
-    & IF ( ISFILTERED ( HPIAdmins[Region Name] ),
-           CONCATENATEX ( VALUES ( HPIAdmins[Region Name] ), HPIAdmins[Region Name], ", " ),
-           "All regions" )
-```
-Use `Dynamic Title` in **Format → Title → fx** so the heading changes with the slicer.
-
-### Theme
-Import `HPI_Theme.json` (View → Themes → Browse for themes). It gives six distinct, color-blind-friendly region colors, so Task 6 looks consistent across both visuals.
-
----
 
 ## 5. Common problems
 
@@ -183,11 +163,4 @@ Import `HPI_Theme.json` (View → Themes → Browse for themes). It gives six di
 | Scatter shows only one dot per region | Put `Year` in **Values** (Details), not only in X Axis. |
 | Date Hierarchy missing | File → Options → Current file → Data Load → enable Auto date/time, or use helper Year. |
 
-## 6. Submission checklist
-- [ ] Only Date, Region Name, Index, 12 month percentage change visible in Data pane
-- [ ] Types: Date / Text / Decimal / Decimal
-- [ ] Column renamed and aggregation = Average
-- [ ] Line chart (per year, legend = Region Name, colored)
-- [ ] Duplicate scatter chart with Size = Average of Index
-- [ ] Slicers, bookmarks and reset button working
-- [ ] Save as `PracticeActivity2.pbix`
+
